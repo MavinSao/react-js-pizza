@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Card, Button } from 'react-bootstrap';
 export default class Item extends Component {
     render() {
-        var { name, price, amount, total } = this.props.item;
+        var { name, price, amount, total, image } = this.props.item;
         return (
             <div>
                 <Card>
-                    <Card.Img variant="top" src="https://i.ytimg.com/vi/hyUnGjykNwg/maxresdefault.jpg" />
+                    <Card.Img variant="top" src={image} />
                     <Card.Body>
                         <Card.Title><h3>{name}</h3></Card.Title>
                         <Card.Text>
